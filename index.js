@@ -1,5 +1,6 @@
 import redux from 'redux'
 const createStore = redux.createStore
+const combineReducer = redux.combineReducers
 
 // Action types
 const BUY_CAKE = 'BUY_CAKE'
@@ -48,7 +49,12 @@ const IceCreamReducer = (state = initialIceCreamState, action) => {
   }
 }
 
-const store = createStore(reducer)
+const rootReducer = combineReducer({
+  cake: CakeReducer,
+  iceCream: IceCreamReducer
+})
+
+const store = createStore(rootReducer)
 
 console.log('Initial state', store.getState())
 
