@@ -13,7 +13,7 @@ function App() {
       <IceCreamContainer />
       <NewCakeContainer />
       <ItemContainer cake />
-      <ItemContainer iceCream />
+      <ItemContainer />
     </div>
   );
 }
