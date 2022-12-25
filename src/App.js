@@ -1,14 +1,16 @@
-import CakeContainer from './components/cakeContainer';
+import CakesContainer from './components/CakesContainer';
 import './App.css';
 import HooksCakeContainer from './components/HooksCakeContainer';
-import IceCreamContainer from './components/iceCreamContainer';
+import IceCreamContainer from './components/IceCreamContainer';
+import NewCakeContainer from './components/NewCakeContainer';
 
 function App() {
   return (
     <div className="App">
       <HooksCakeContainer />
-      <CakeContainer />
+      <CakesContainer />
       <IceCreamContainer />
+      <NewCakeContainer />
     </div>
   );
 }
